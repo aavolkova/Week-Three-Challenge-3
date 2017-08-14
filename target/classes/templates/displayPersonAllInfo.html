@@ -1,0 +1,144 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head lang="en" >-->
+    <!--<meta  charset="UTF-8" />-->
+    <!--<title>Robo Resume - Display All Info</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<h4>The following information was entered:</h4>-->
+<!--<h4>======================================</h4>-->
+<!--<h4>Personal Info:</h4>-->
+<!--<h5 th:inline="text"> Full Name: [[${person.firstName}]] [[${person.lastName}]].</h5>-->
+<!--<h5 th:inline="text"> Email Address: [[${person.emailAddress}]].</h5>-->
+<!--<br/>-->
+
+<!--<h4>Education:</h4>-->
+<!--<div th:each="e:${person.educationalAchievements}">-->
+    <!--<p th:text="${e.degreeTitle}"></p>-->
+    <!--<p th:text="${e.educationalInstitution}"></p>-->
+    <!--<p th:text="${e.graduateDate}"></p>-->
+<!--</div>-->
+
+<!--<br/>-->
+
+<!--<h4>Work Experience:</h4>-->
+<!--<div th:each="w:${person.workExperience}">-->
+    <!--<p th:text="${w.positionTitle}"></p>-->
+    <!--<p th:text="${w.startDate}"></p>-->
+    <!--<p th:text="${w.endDate}"></p>-->
+    <!--<p th:text="${w.duty}"></p>-->
+<!--</div>-->
+
+<!--<br/>-->
+
+<!--<h4>Skills:</h4>-->
+<!--<div th:each="s:${person.skillsWithRating}">-->
+    <!--<p th:text="${s.skillTitle}"></p>-->
+    <!--<p th:text="${s.skillRating}"></p>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;================================================================&ndash;&gt;-->
+
+<!--<br/>-->
+<!--<br/>-->
+<!--<br/>-->
+
+<!--<p></p>-->
+<!--<a href="/"> <input type="submit" value="Return to home"/></a>-->
+<!--<p></p>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!--================================================================-->
+<!--================================================================-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Robo Resume - Display All Info</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+        <!-- Custom styles for this template -->
+        <link href="css/creative.min.css" rel="stylesheet">
+
+        <!-- Modifications in styles for this template -->
+        <link href="css/additionals.css" rel="stylesheet">
+        <link href="css/enterPerson.css" rel="stylesheet">
+
+    </head>
+
+<body id="page-top">
+
+
+<header class="masthead">
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>Here is Your Resume:</h1>
+
+            <br/><br/>
+
+            <div class="form-group">
+                <h3>Personal Info:</h3>
+                <h5 th:inline="text"> Full Name: [[${person.firstName}]] [[${person.lastName}]].</h5>
+                <h5 th:inline="text"> Email Address: [[${person.emailAddress}]].</h5>
+                <br/>
+            </div>
+
+            <div class="form-group">
+                <h3>Education:</h3>
+                <div th:each="e:${person.educationalAchievements}">
+                    <h5 th:text="${e.degreeTitle}"></h5>
+                    <h5 th:text="${e.educationalInstitution}"></h5>
+                    <h5 th:text="${e.graduateDate}"></h5>
+                </div>
+                <br/>
+            </div>
+
+            <div class="form-group">
+                <h3>Work Experience:</h3>
+                <div th:each="w:${person.workExperience}">
+                    <h5 th:text="${w.positionTitle}"></h5>
+                    <h5 th:text="${w.startDate}"></h5>
+                    <h5 th:text="${w.endDate}"></h5>
+                    <h5 th:text="${w.duty}"></h5>
+                </div>
+                <br/>
+            </div>
+
+            <div class="form-group">
+                <h3>Skills:</h3>
+                <div th:each="s:${person.skillsWithRating}">
+                    <h5 th:text="${s.skillTitle}"></h5>
+                    <h5 th:text="${s.skillRating}"></h5>
+                </div>
+                <br/>
+            </div>
+
+            <div class="form-group">
+                <a class="btn btn-primary btn-xl" href="/enterPerson" type = "submit">Would Like to Start Again?</a>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+
+</body>
+
+</html>

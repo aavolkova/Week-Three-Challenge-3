@@ -1,0 +1,47 @@
+header.masthead .header-content .header-content-inner h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color:white;  }
+header.masthead .header-content .header-content-inner hr {
+    margin: 30px auto;
+    color: #2736f0;
+    border-color: rgb(0, 27, 255);}
+header.masthead .header-content .header-content-inner p {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    color: white; }
+
+
+/*header.masthead.p{*/
+    /*color:darkmagenta;*/
+/*}*/
+
+/*a{*/
+    /*color:yellow;*/
+/*}*/
+
+/*.intro .intro-body .brand-heading {*/
+    /*font-size: 40px;*/
+    /*color: lightseagreen;*/
+/*}*/
+
+/*body{*/
+    /*color:green;*/
+    /*background-color:blue;*/
+/*}*/
+
+.text-muted{
+    color:red;
+}
+
+.btn-xl{
+    color: #1f4eeb;
+    background-color:greenyellow;
+    border-style:none;
+}
+
+

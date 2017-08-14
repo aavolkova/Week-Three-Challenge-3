@@ -1,0 +1,138 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head lang="en">-->
+    <!--<meta charset="UTF-8"/>-->
+    <!--<title>Robo Resume - Enter Employment</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Enter Employment</h1>-->
+
+<!--<form action="#" th:action="@{/enterEmployment}" th:object="${newEmployment}" method="post">-->
+
+    <!--<p>Enter Position Title: <input type="text" th:field="*{positionTitle}" />-->
+        <!--<span th:if="${#fields.hasErrors('positionTitle')}" th:errors="*{positionTitle}"/>  </p>-->
+
+
+    <!--<p>Enter Organisation: <input type="text" th:field="*{organisation}" />-->
+        <!--<span th:if="${#fields.hasErrors('organisation')}" th:errors="*{organisation}"/>  </p>-->
+
+    <!--<p>Enter start date (employment with the organisation) in format "yyyy/MM/dd": <input type="text" th:field="*{startDate}" />-->
+    <!--<span th:if="${#fields.hasErrors('startDate')}" th:errors="*{startDate}"  /> </p>-->
+
+    <!--<p>Enter end date (employment with the organisation) in format "yyyy/MM/dd":<input type="text" th:field="*{endDate}" />-->
+    <!--<span th:if="${#fields.hasErrors('endDate')}" th:errors="*{endDate}"/> </p>-->
+
+    <!--<p> <input  type = "submit" value="Submit Employment Info"/> </p>-->
+    <!---->
+<!--</form>-->
+<!--<br/>-->
+<!--<br/>-->
+<!--<br/>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!--===============================================-->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Robo Resume - Enter Employment</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+        <!-- Custom styles for this template -->
+        <link href="css/creative.min.css" rel="stylesheet">
+
+        <!-- Modifications in styles for this template -->
+        <link href="css/additionals.css" rel="stylesheet">
+        <link href="css/enterPerson.css" rel="stylesheet">
+
+    </head>
+
+<body id="page-top">
+
+
+<header class="masthead">
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1 id="homeHeading">Enter Employment</h1>
+            <hr>
+
+            <form action="#" th:action="@{/enterEmployment}" th:object="${newEmployment}" method="post">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Position Title:</label>
+                        <div class="col-sm-13">
+                            <input type="text" th:field="*{positionTitle}" />
+                            <p><span th:if="${#fields.hasErrors('positionTitle')}" th:errors="*{positionTitle}"/></p>
+                            <!--<input type="First name" class="form-control" id="inputEmail3" placeholder="Email">-->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Organisation:</label>
+                        <div class="col-sm-13">
+                            <input type="text" th:field="*{organisation}" />
+                            <p><span th:if="${#fields.hasErrors('organisation')}" th:errors="*{organisation}"/>  </p>
+                            <!--<input type="Last name" class="form-control" id="inputEmail3" placeholder="Email">-->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-5 control-label">Start date "yyyy/MM/dd":</label>
+                        <div class="col-sm-13">
+                            <input type="text" th:field="*{startDate}" />
+                            <span th:if="${#fields.hasErrors('startDate')}" th:errors="*{startDate}"  /> </p>
+                            <!--<input type="Email" class="form-control" id="inputPassword3" placeholder="Password">-->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    <label class="col-sm-5 control-label">End date "yyyy/MM/dd":</label>
+                    <div class="col-sm-13">
+                        <input type="text" th:field="*{endDate}" />
+                        <p><span th:if="${#fields.hasErrors('endDate')}" th:errors="*{endDate}"/> </p>
+                        <!--<input type="Email" class="form-control" id="inputPassword3" placeholder="Password">-->
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-5 control-label">Enter duty:</label>
+                        <div class="col-sm-13">
+                            <input type="text" th:field="*{duty}" />
+                            <p><span th:if="${#fields.hasErrors('duty')}" th:errors="*{duty}"/> </p>
+                            <!--<input type="Email" class="form-control" id="inputPassword3" placeholder="Password">-->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!--<a class="btn btn-primary btn-xl"  type = "submit">Submit Info</a>-->
+                        <!--<a class="btn btn-primary btn-xl">Submit Info</a>-->
+                        <a class="btn btn-primary btn-xl"> <input  type = "submit" value="Submit Employment Info"/>Submit Info</a>
+                    </div>
+        </div>
+        </form>
+        </form>
+
+
+
+
+    </div>
+    </div>
+
+</header>
+
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head lang="en">-->
+    <!--<meta charset="UTF-8"/>-->
+    <!--<title>Robo Resume - Enter Skills</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Enter Skills</h1>-->
+
+
+<!--&lt;!&ndash;private String skillTitle;&ndash;&gt;-->
+
+<!--&lt;!&ndash;private String skillRating;&ndash;&gt;-->
+
+
+
+<!--<form action="#" th:action="@{/enterSkills}" th:object="${newSkills}" method="post">-->
+
+    <!--<p>Skill Title: <input type="text" th:field="*{skillTitle}" />-->
+        <!--<span th:if="${#fields.hasErrors('skillTitle')}" th:errors="*{skillTitle}"/>  </p>-->
+
+    <!--<p>Skill Rating: <input type="text" th:field="*{skillRating}" />-->
+        <!--<span th:if="${#fields.hasErrors('skillRating')}" th:errors="*{skillRating}"/>  </p>-->
+
+
+    <!--<p> <input  type = "submit" value="Submit Skills Info"/> </p>-->
+
+<!--</form>-->
+<!--<br/>-->
+<!--<br/>-->
+<!--<br/>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+<!--===============================================-->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Robo Resume - Enter Skills</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+        <!-- Custom styles for this template -->
+        <link href="css/creative.min.css" rel="stylesheet">
+
+        <!-- Modifications in styles for this template -->
+        <link href="css/additionals.css" rel="stylesheet">
+        <link href="css/enterPerson.css" rel="stylesheet">
+
+    </head>
+
+<body id="page-top">
+
+
+<header class="masthead">
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1 id="homeHeading">Enter Skills</h1>
+            <hr>
+
+
+            <form action="#" th:action="@{/enterSkills}" th:object="${newSkills}" method="post">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Skill Title:</label>
+                        <div class="col-sm-12">
+                            <input type="text" th:field="*{skillTitle}" />
+                            <p><span th:if="${#fields.hasErrors('skillTitle')}" th:errors="*{skillTitle}"/>  </p>
+                            <!--<input type="First name" class="form-control" id="inputEmail3" placeholder="Email">-->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Skill Rating:</label>
+                        <div class="col-sm-12">
+                            <input type="text" th:field="*{skillRating}" />
+                            <p><span th:if="${#fields.hasErrors('skillRating')}" th:errors="*{skillRating}"/>  </p>
+                            <!--<input type="Last name" class="form-control" id="inputEmail3" placeholder="Email">-->
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <!--<a class="btn btn-primary btn-xl"  type = "submit">Submit Info</a>-->
+                        <!--<a class="btn btn-primary btn-xl">Submit Info</a>-->
+
+                        <a class="btn btn-primary btn-xl"> <input  type = "submit" value="Submit Skills Info"/>Submit Info</a>
+                        <!--<p> <input  type = "submit" value="Submit Skills Info"/> </p>-->
+                        <!--<p> <input  type = "submit" value="Submit Education Info"/> </p>-->
+                    </div>
+                </form>
+            </form>
+
+
+
+
+        </div>
+    </div>
+
+</header>
+
+
+</body>
+
+</html>

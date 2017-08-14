@@ -1,0 +1,104 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org">-->
+<!--<head lang="en" >-->
+    <!--<meta  charset="UTF-8" />-->
+    <!--<title>Robo Resume - Result Employment</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Employment Entered</h1>-->
+
+<!--<p th:text="'Position Title: ' + ${newEmployment.positionTitle}"></p>-->
+<!--<p th:text="'Organisation: ' + ${newEmployment.organisation}"></p>-->
+<!--<p th:text="'Start Date: ' + ${newEmployment.startDate}"></p>-->
+<!--<p th:text="'End Date: ' + ${newEmployment.endDate}"></p>-->
+<!--<p th:text="'Duty: ' + ${newEmployment.duty}"></p>-->
+
+<!--&lt;!&ndash;private String positionTitle;&ndash;&gt;-->
+<!--&lt;!&ndash;private String organisation;&ndash;&gt;-->
+<!--&lt;!&ndash;private LocalDate startDate;&ndash;&gt;-->
+<!--&lt;!&ndash;private LocalDate endDate;&ndash;&gt;-->
+<!--&lt;!&ndash;private String duty;&ndash;&gt;-->
+
+<!--<a href="/enterEmployment" > <input type="submit" value="Add Another Employment"/></a>-->
+<!--<a href="/enterSkills"> <input type="submit" value="Continue"/></a>-->
+<!--&lt;!&ndash;<a href="/displayPersonAllInfo"> <input type="submit" value="Result"/></a>&ndash;&gt;-->
+
+<!--<br/>-->
+<!--<br/>-->
+
+<!--&lt;!&ndash;<a href="/enterEducation"> <input type="submit" value="Continue"/></a>&ndash;&gt;-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+<!--======================================================-->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Robo Resume - Result Employment</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+        <!-- Custom styles for this template -->
+        <link href="css/creative.min.css" rel="stylesheet">
+
+        <!-- Modifications in styles for this template -->
+        <link href="css/additionals.css" rel="stylesheet">
+        <link href="css/enterPerson.css" rel="stylesheet">
+
+    </head>
+
+<body id="page-top">
+
+
+<header class="masthead">
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>Employment Entered</h1>
+
+            <br/><br/>
+
+            <div class="form-group">
+                <h3 th:text="'Position Title: ' + ${newEmployment.positionTitle}"></h3>
+                <h3 th:text="'Organisation: ' + ${newEmployment.organisation}"></h3>
+                <h3 th:text="'Start Date: ' + ${newEmployment.startDate}"></h3>
+                <h3 th:text="'End Date: ' + ${newEmployment.endDate}"></h3>
+                <h3 th:text="'Duty: ' + ${newEmployment.duty}"></h3>
+            </div>
+
+
+            <br/><br/>
+            <div class="form-group">
+                <a class="btn btn-primary btn-xl" href="/enterEmployment" type = "submit">Add Another Employment</a>
+                <a class="btn btn-primary btn-xl" href="/enterSkills" type = "submit">Continue</a>
+                <!--<a href="/enterEmployment" > <input type="submit" value="Add Another Employment"/></a>-->
+                <!--<a href="/enterSkills"> <input type="submit" value="Continue"/></a>-->
+
+
+                <!--<a class="btn btn-primary btn-xl" href="/enterEducation" type = "submit">Add Another Education</a>-->
+            </div>
+        </div>
+    </div>
+
+</header>
+
+
+</body>
+
+</html>
