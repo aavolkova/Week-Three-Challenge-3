@@ -28,12 +28,12 @@ public class Education {
 //    LocalDate today = LocalDate.now();
 //    final int now = today.getYear();
 
-//    @NotNull @Min(1950) @Max(2023)
-//    private Integer graduateDate;
+    @NotNull @Min(1950) @Max(2023)
+    private Integer graduateDate;
 
-    @NotNull
-    @DateTimeFormat(pattern = "yyyy/MM/dd")
-    private LocalDate graduateDate;
+//    @NotNull
+//    @DateTimeFormat(pattern = "yyyy/MM/dd")
+//    private LocalDate graduateDate;
 
 
     // setters and getters
@@ -61,13 +61,13 @@ public class Education {
         this.educationalInstitution = educationalInstitution;
     }
 
-//    public Integer getGraduateDate() {
-//        return graduateDate;
-//    }
-//
-//    public void setGraduateDate(Integer graduateDate) {
-//        this.graduateDate = graduateDate;
-//    }
+    public Integer getGraduateDate() {
+        return graduateDate;
+    }
+
+    public void setGraduateDate(Integer graduateDate) {
+        this.graduateDate = graduateDate;
+    }
 
 
 
@@ -84,12 +84,12 @@ public class Education {
 
 
 
-    public LocalDate getGraduateDate() {
-        return graduateDate;
-    }
-    public void setGraduateDate(LocalDate graduateDate) {
-        this.graduateDate = graduateDate;
-    }
+//    public LocalDate getGraduateDate() {
+//        return graduateDate;
+//    }
+//    public void setGraduateDate(LocalDate graduateDate) {
+//        this.graduateDate = graduateDate;
+//    }
 
 
 
